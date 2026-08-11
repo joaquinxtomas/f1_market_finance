@@ -1,0 +1,51 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# Entornos y secretos
+.env
+.env.*
+!.env.example
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+*.db
+*.db.wal
+
+# dbt
+transform/target/
+transform/dbt_packages/
+transform/logs/
+.user.yml
+
+# Prefect
+.prefect/
+prefect.db
+
+# Datos generados (data/seeds/ sí se versiona)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.parquet
+
+# Caches de tooling
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
