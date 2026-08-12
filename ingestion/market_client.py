@@ -1,10 +1,15 @@
 import yfinance as yf
 import pandas as pd
 
-df = pd.read_csv("../data/seeds/sponsors_publicly_traded.csv")
+df = pd.read_csv("data/seeds/sponsors_publicly_traded.csv")
 
-def get_info_ticker(df, constructor, start_date, end_date) -> dict:
+def get_info_ticker(df, constructor, race_date) -> dict:
     df = df[df["constructor"] == constructor]
+
+    race_dt = pd.Timestamp(race_date)
+
+    start_date = (race_dt - pd.offsets.BusinessDay(n=1)).strftime("%Y-%m-%d")
+    end_date = (race_dt + pd.offsets.BusinessDay(n=2)).strftime("%Y-%m-%d")
 
     ticker_list = df["yfinance_ticker"].tolist()
     info={}
@@ -19,6 +24,3 @@ def get_info_ticker(df, constructor, start_date, end_date) -> dict:
         except Exception as e:
             print(f"[ERROR] Fallo al consultad {t}: {e}")
     return info
-
-l = get_info_ticker(df, "Ferrari", "2026-7-24","2026-7-28")
-print(l)

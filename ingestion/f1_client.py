@@ -6,8 +6,8 @@ BASE_URL = 'https://api.jolpi.ca/ergast/f1'
 
 def get_data_api(year, endpoint, race_round = None):
     endpoint = endpoint.lower()
-    if (endpoint != 'constructors') and (endpoint != 'results'):
-        raise ValueError("Opciones válidas: 'constructors', 'results'")
+    if (endpoint != 'constructors') and (endpoint != 'results') and (endpoint != 'races'):
+        raise ValueError("Opciones válidas: 'constructors', 'results', 'races'")
 
     actual_year = datetime.now().year
     if(year <= actual_year):
@@ -20,7 +20,7 @@ def get_data_api(year, endpoint, race_round = None):
             req = r.json()
             if(endpoint == 'constructors'):
                 data = req["MRData"]["ConstructorTable"]["Constructors"]
-            elif(endpoint == 'results'):
+            elif(endpoint in ('results', 'races')):
                 data = req["MRData"]["RaceTable"]["Races"]
             return data
         except httpx.HTTPError as e:
@@ -28,7 +28,3 @@ def get_data_api(year, endpoint, race_round = None):
             raise
     else:
         raise ValueError("El año no puede ser mayor al actual.")
-
-
-teams = get_data_api(2026, "results", 11)
-print(json.dumps(teams, indent=4))
