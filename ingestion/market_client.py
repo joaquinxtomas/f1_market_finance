@@ -3,7 +3,11 @@ import pandas as pd
 
 df = pd.read_csv("data/seeds/sponsors_publicly_traded.csv")
 
-def get_info_ticker(df, constructor, race_date) -> dict:
+def get_info_ticker(df, constructor, race_date) -> tuple:
+
+    info = {}
+    errores=[]
+
     df = df[df["constructor"] == constructor]
 
     race_dt = pd.Timestamp(race_date)
@@ -21,6 +25,9 @@ def get_info_ticker(df, constructor, race_date) -> dict:
                 info[t] = historial
             else:
                 print(f"[WARNING] Sin datos para {t} entre {start_date} y {end_date}")
+                errores.append({"ticker": t, "constructor": constructor, "start_date": start_date, "end_date": end_date})
         except Exception as e:
-            print(f"[ERROR] Fallo al consultad {t}: {e}")
-    return info
+            print(f"[ERROR] Fallo al consultar {t}: {e}")
+            errores.append({"ticker": t, "constructor": constructor, "start_date": start_date, "end_date": end_date})
+
+    return info, errores
