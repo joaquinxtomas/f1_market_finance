@@ -27,3 +27,87 @@ Happy modeling!
 [0m20:19:30.560929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b45f0d763f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b45f325edb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b45effc9ee0>]}
 [0m20:19:30.561269 [debug] [MainThread]: Flushing usage events
 [0m20:19:31.261520 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:41:00.476513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DED90AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DF055250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DE967E00>]}
+
+
+============================== 11:41:00.726497 | f3ac6737-c48d-41ee-9192-c372005b1ff0 ==============================
+[0m11:41:00.726497 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:41:00.726497 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\joaquin.palacios\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:41:00.868456 [info ] [MainThread]: dbt version: 1.11.11
+[0m11:41:00.869707 [info ] [MainThread]: python version: 3.12.13
+[0m11:41:00.869707 [info ] [MainThread]: python path: C:\Users\joaquin.palacios\Documents\f1_market_finance\.venv\Scripts\python.exe
+[0m11:41:00.870736 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m11:41:02.780565 [info ] [MainThread]: Using profiles dir at C:\Users\joaquin.palacios\.dbt
+[0m11:41:02.780565 [info ] [MainThread]: Using profiles.yml file at C:\Users\joaquin.palacios\.dbt\profiles.yml
+[0m11:41:02.780565 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\joaquin.palacios\Documents\f1_market_finance\dbt_project.yml
+[0m11:41:02.787529 [info ] [MainThread]: adapter type: duckdb
+[0m11:41:02.787529 [info ] [MainThread]: adapter version: 1.10.1
+[0m11:41:02.787529 [info ] [MainThread]: Configuration:
+[0m11:41:02.791946 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:41:02.792936 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:41:02.793798 [info ] [MainThread]: Required dependencies:
+[0m11:41:02.794923 [debug] [MainThread]: Executing "git --help"
+[0m11:41:02.955276 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:41:02.956273 [debug] [MainThread]: STDERR: "b''"
+[0m11:41:02.957271 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:41:02.959263 [info ] [MainThread]: Connection:
+[0m11:41:02.960230 [info ] [MainThread]:   database: f1_market
+[0m11:41:02.961545 [info ] [MainThread]:   schema: main
+[0m11:41:02.961545 [info ] [MainThread]:   path: C:\Users\joaquin.palacios\Documents\proyectos\f1_market_finance\data\f1_market.duckdb
+[0m11:41:02.965177 [info ] [MainThread]:   config_options: None
+[0m11:41:02.966205 [info ] [MainThread]:   extensions: None
+[0m11:41:02.967201 [info ] [MainThread]:   settings: {}
+[0m11:41:02.968189 [info ] [MainThread]:   external_root: .
+[0m11:41:02.969162 [info ] [MainThread]:   use_credential_provider: None
+[0m11:41:02.970161 [info ] [MainThread]:   attach: None
+[0m11:41:02.971685 [info ] [MainThread]:   filesystems: None
+[0m11:41:02.971779 [info ] [MainThread]:   remote: None
+[0m11:41:02.971779 [info ] [MainThread]:   plugins: None
+[0m11:41:02.971779 [info ] [MainThread]:   disable_transactions: False
+[0m11:41:02.976156 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:41:03.470712 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:41:03.778782 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:41:03.778782 [debug] [MainThread]: On debug: select 1 as id
+[0m11:41:03.778782 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:41:03.801487 [debug] [MainThread]: DuckDB adapter: duckdb error: IO Error: Cannot open file "C:\Users\joaquin.palacios\Documents\proyectos\f1_market_finance\data\f1_market.duckdb": El sistema no puede encontrar la ruta especificada.
+
+[0m11:41:03.801487 [debug] [MainThread]: DuckDB adapter: Error running SQL: select 1 as id
+[0m11:41:03.801487 [debug] [MainThread]: DuckDB adapter: Rolling back transaction.
+[0m11:41:03.801487 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:41:03.831787 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m11:41:03.836793 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:41:03.836793 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\joaquin.palacios\Documents\f1_market_finance\dbt_project.yml> not found
+
+[0m11:41:03.836793 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >IO Error: Cannot open file "C:\Users\joaquin.palacios\Documents\proyectos\f1_market_finance\data\f1_market.duckdb": El sistema no puede encontrar la ruta especificada.
+
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:41:03.836793 [debug] [MainThread]: Command `dbt debug` failed at 11:41:03.836793 after 3.57 seconds
+[0m11:41:03.836793 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:41:03.836793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DD1030B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DF45FA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DF4545C0>]}
+[0m11:41:03.836793 [debug] [MainThread]: Flushing usage events
+[0m11:41:04.579506 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:11:09.660173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2FDD2DB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B281606F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2FDC24710>]}
+
+
+============================== 12:11:09.683615 | d1f66c9e-3ad9-4f96-86de-cbb9d485b30a ==============================
+[0m12:11:09.683615 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:11:09.684614 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\joaquin.palacios\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:11:09.685611 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\joaquin.palacios\Documents\f1_market_finance\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:11:09.688603 [debug] [MainThread]: Command `dbt run` failed at 12:11:09.688603 after 0.75 seconds
+[0m12:11:09.689599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B282CEB950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B282C28950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B28134A9C0>]}
+[0m12:11:09.689599 [debug] [MainThread]: Flushing usage events
+[0m12:11:10.412921 [debug] [MainThread]: An error was encountered while trying to flush usage events
