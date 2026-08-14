@@ -47,8 +47,9 @@ CONSTRUCTOR_MAP = {
 }
 
 rows_tickers=[]
+#todos_errores = []
 for i, fila in pares.iterrows():
-    r = market_client.get_info_ticker(df_sponsors, CONSTRUCTOR_MAP[fila["constructor"]], fila["date"])
+    r, _ = market_client.get_info_ticker(df_sponsors, CONSTRUCTOR_MAP[fila["constructor"]], fila["date"])
     time.sleep(2)
     for ticker, historial in r.items():
         for fecha, fila_precio in historial.iterrows():
@@ -63,11 +64,12 @@ for i, fila in pares.iterrows():
                 "volume": fila_precio["Volume"]
             }
             rows_tickers.append(row)
+    #todos_errores.extend(errores)
 
 df_tickers=pd.DataFrame(rows_tickers)
 
-print(df_tickers)
-
-#with duckdb.connect("data/f1_market.duckdb") as con:
-#    con.sql("CREATE OR REPLACE TABLE raw_race_results AS SELECT * FROM df_races")
-#    con.sql("SELECT * FROM raw_race_results").show()
+with duckdb.connect("data/f1_market.duckdb") as con:
+    con.sql("CREATE OR REPLACE TABLE raw_race_results AS SELECT * FROM df_races")
+    con.sql("CREATE OR REPLACE TABLE raw_ticker_data AS SELECT * FROM df_tickers")
+    con.sql("SELECT * FROM raw_race_results").show()
+    con.sql("SELECT * FROM raw_ticker_data").show()

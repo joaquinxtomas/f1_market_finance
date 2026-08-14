@@ -31,9 +31,7 @@ McLaren,Iron Mountain,IRM,NYSE,IRM
 McLaren,Freshworks,FRSH,NASDAQ,FRSH
 McLaren,Schneider Electric,SU,Euronext Paris,SU.PA
 McLaren,British American Tobacco,BTI,NYSE,BTI
-McLaren,Smartsheet,SMAR,NYSE,SMAR
 McLaren,Puma,PUM,Frankfurt,PUM.DE
-McLaren,Alteryx,AYX,NYSE,AYX
 McLaren,Rubrik,RBRK,NYSE,RBRK
 Red Bull,Oracle,ORCL,NYSE,ORCL
 Red Bull,LVMH (Tag Heuer),MC,Euronext Paris,MC.PA
@@ -41,12 +39,10 @@ Red Bull,ExxonMobil (Mobil 1 / Esso),XOM,NYSE,XOM
 Red Bull,Siemens,SIE,Frankfurt,SIE.DE
 Red Bull,AT&T,T,NYSE,T
 Red Bull,Hexagon,HEXA-B,Stockholm,HEXA-B.ST
-Red Bull,Ansys,ANSS,NASDAQ,ANSS
 Red Bull,Visa,V,NYSE,V
 Red Bull,Heineken,HEIA,Euronext Amsterdam,HEIA.AS
 Red Bull,Philips,PHG,NYSE,PHG
 Red Bull,Ford,F,NYSE,F
-Red Bull,DMG Mori,GIL,Tokyo,GIL.T
 Mercedes,CrowdStrike,CRWD,NASDAQ,CRWD
 Mercedes,TeamViewer,TMV,Frankfurt,TMV.DE
 Mercedes,UBS,UBS,NYSE,UBS
@@ -74,7 +70,6 @@ Aston Martin,Xerox,XRX,NASDAQ,XRX
 Aston Martin,Arm Holdings,ARM,NASDAQ,ARM
 Aston Martin,CoreWeave,CRWV,NASDAQ,CRWV
 Aston Martin,Barclays,BARC,LSE,BARC.L
-Aston Martin,BNY Mellon,BK,NYSE,BK
 Aston Martin,Valvoline,VVV,NYSE,VVV
 Aston Martin,Puma,PUM,Frankfurt,PUM.DE
 Aston Martin,Honda,7267,Tokyo,7267.T
@@ -92,7 +87,6 @@ Williams,Berkshire Hathaway (Duracell),BRK-B,NYSE,BRK-B
 Williams,Komatsu,6301,Tokyo,6301.T
 Williams,Amazon (Zoox),AMZN,NASDAQ,AMZN
 Williams,Barclays,BARC,LSE,BARC.L
-Williams,BNY Mellon,BK,NYSE,BK
 Williams,Edgewell (Wilkinson Sword),EPC,NYSE,EPC
 Williams,Kering (Girard-Perregaux),KER,Euronext Paris,KER.PA
 Audi,bp (Castrol),BP,NYSE,BP
@@ -102,10 +96,7 @@ Audi,Hyatt,H,NYSE,H
 Audi,BASF (Glasurit),BAS,Frankfurt,BAS.DE
 Audi,Extreme Networks,EXTR,NASDAQ,EXTR
 Haas,Toyota (TGR),7203,Tokyo,7203.T
-Haas,MoneyGram,MGI,NASDAQ,MGI
-Haas,CommScope,COMM,NASDAQ,COMM
 Haas,MGM Resorts,MGM,NYSE,MGM
-Haas,Callaway (Travis Mathew),MODG,NYSE,MODG
 Racing Bulls,Visa,V,NYSE,V
 Racing Bulls,Block (Cash App),XYZ,NYSE,XYZ
 Racing Bulls,Ford,F,NYSE,F
