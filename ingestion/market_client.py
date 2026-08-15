@@ -12,8 +12,8 @@ def get_info_ticker(df, constructor, race_date) -> tuple:
 
     race_dt = pd.Timestamp(race_date)
 
-    start_date = (race_dt - pd.offsets.BusinessDay(n=1)).strftime("%Y-%m-%d")
-    end_date = (race_dt + pd.offsets.BusinessDay(n=2)).strftime("%Y-%m-%d")
+    start_date = (race_dt - pd.offsets.BusinessDay(n=5)).strftime("%Y-%m-%d")
+    end_date = (race_dt + pd.offsets.BusinessDay(n=6)).strftime("%Y-%m-%d")
 
     ticker_list = df["yfinance_ticker"].tolist()
     info={}

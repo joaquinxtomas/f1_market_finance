@@ -1,6 +1,9 @@
 import streamlit as st
 import duckdb
 import plotly.express as px
+import plotly.graph_objects as go
+import yfinance as yf
+import pandas as pd
 
 con = duckdb.connect("data/f1_market.duckdb")
 st.title("Variacion porcentual de empresas patrocinadoras en la formula 1")
@@ -15,5 +18,21 @@ data = con.sql(f"""
     WHERE constructor = '{escuderia}' AND race_name = '{carrera}' 
 """).fetchdf()
 
-fig = px.bar(data, x="race_date", y="before_close", color="ticker", title=f"Evolución de sponsors - {carrera}")
+tickers = con.sql(f"SELECT DISTINCT ticker FROM ticker_variation WHERE constructor = '{escuderia}'").fetchdf()
+ticker_seleccionado = st.selectbox("Selecciona un ticker", tickers["ticker"])
+
+ticker = yf.Ticker(ticker_seleccionado)
+historial = con.sql(f"""
+                        SELECT ticker_data, ticker_open, high, low, ticker_close, volume
+                        FROM stg_ticker_data
+                        WHERE ticker = '{ticker_seleccionado}'
+                        AND constructor = '{escuderia}'
+                    """).fetchdf()
+fig = go.Figure(data = [go.Candlestick(
+    x=historial.index,
+    open=historial["Open"],
+    high = historial["High"],
+    low=historial["Low"],
+    close=historial["Close"]
+)])
 st.plotly_chart(fig)
