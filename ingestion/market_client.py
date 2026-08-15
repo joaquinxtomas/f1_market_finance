@@ -1,8 +1,6 @@
 import yfinance as yf
 import pandas as pd
 
-df = pd.read_csv("data/seeds/sponsors_publicly_traded.csv")
-
 def get_info_ticker(df, constructor, race_date) -> tuple:
 
     info = {}

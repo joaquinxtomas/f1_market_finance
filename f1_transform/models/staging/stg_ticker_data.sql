@@ -1,6 +1,7 @@
 SELECT 
     td.ticker AS ticker,
     td.constructor AS constructor,
+    CAST(race_date AS DATE) AS race_date,
     CAST(td.date AS DATE) AS ticker_date,
     td.open AS ticker_open,
     td.close AS ticker_close,
