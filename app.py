@@ -18,7 +18,7 @@ CONSTRUCTOR_MAP = {
     "cadillac": "Cadillac"
 }
 
-con = duckdb.connect("data/f1_market.duckdb")
+con = duckdb.connect("data/f1_market.duckdb", read_only=True)
 st.title("F1 Sponsor Stock Variation")
 
 constructors = con.sql("SELECT DISTINCT constructor FROM ticker_variation ORDER BY constructor").fetchdf()
