@@ -1,108 +1,108 @@
-constructor,sponsor,ticker,exchange,yfinance_ticker
-Ferrari,HP,HPQ,NYSE,HPQ
-Ferrari,Shell,SHEL,NYSE,SHEL
-Ferrari,EssilorLuxottica (Ray-Ban),EL,Euronext Paris,EL.PA
-Ferrari,SKF,SKF-B,Stockholm,SKF-B.ST
-Ferrari,Brembo,BRE,Euronext Milan,BRE.MI
-Ferrari,Iveco,IVG,Euronext Milan,IVG.MI
-Ferrari,DXC Technology,DXC,NYSE,DXC
-Ferrari,UniCredit,UCG,Euronext Milan,UCG.MI
-Ferrari,IBM,IBM,NYSE,IBM
-Ferrari,Amazon (AWS),AMZN,NASDAQ,AMZN
-Ferrari,Philip Morris International,PM,NYSE,PM
-Ferrari,Pernod Ricard (Chivas Regal),RI,Euronext Paris,RI.PA
-Ferrari,Nestle (S.Pellegrino),NESN,SIX,NESN.SW
-Ferrari,Krafton (PUBG Mobile),259960,KOSE,259960.KS
-McLaren,Mastercard,MA,NYSE,MA
-McLaren,Alphabet (Google),GOOGL,NASDAQ,GOOGL
-McLaren,Dell Technologies,DELL,NYSE,DELL
-McLaren,Goldman Sachs,GS,NYSE,GS
-McLaren,Hilton,HLT,NYSE,HLT
-McLaren,Coca-Cola,KO,NYSE,KO
-McLaren,Cisco (Splunk),CSCO,NASDAQ,CSCO
-McLaren,Arrow Electronics,ARW,NYSE,ARW
-McLaren,Samsonite (TUMI),1910,HKEX,1910.HK
-McLaren,Dropbox,DBX,NASDAQ,DBX
-McLaren,Workday,WDAY,NASDAQ,WDAY
-McLaren,Ecolab,ECL,NYSE,ECL
-McLaren,Okta,OKTA,NASDAQ,OKTA
-McLaren,Deutsche Telekom (T-Mobile),DTE,Frankfurt,DTE.DE
-McLaren,Iron Mountain,IRM,NYSE,IRM
-McLaren,Freshworks,FRSH,NASDAQ,FRSH
-McLaren,Schneider Electric,SU,Euronext Paris,SU.PA
-McLaren,British American Tobacco,BTI,NYSE,BTI
-McLaren,Puma,PUM,Frankfurt,PUM.DE
-McLaren,Rubrik,RBRK,NYSE,RBRK
-Red Bull,Oracle,ORCL,NYSE,ORCL
-Red Bull,LVMH (Tag Heuer),MC,Euronext Paris,MC.PA
-Red Bull,ExxonMobil (Mobil 1 / Esso),XOM,NYSE,XOM
-Red Bull,Siemens,SIE,Frankfurt,SIE.DE
-Red Bull,AT&T,T,NYSE,T
-Red Bull,Hexagon,HEXA-B,Stockholm,HEXA-B.ST
-Red Bull,Visa,V,NYSE,V
-Red Bull,Heineken,HEIA,Euronext Amsterdam,HEIA.AS
-Red Bull,Philips,PHG,NYSE,PHG
-Red Bull,Ford,F,NYSE,F
-Mercedes,CrowdStrike,CRWD,NASDAQ,CRWD
-Mercedes,TeamViewer,TMV,Frankfurt,TMV.DE
-Mercedes,UBS,UBS,NYSE,UBS
-Mercedes,Qualcomm (Snapdragon),QCOM,NASDAQ,QCOM
-Mercedes,Hewlett Packard Enterprise,HPE,NYSE,HPE
-Mercedes,AMD,AMD,NASDAQ,AMD
-Mercedes,Sherwin-Williams,SHW,NYSE,SHW
-Mercedes,SAP,SAP,NYSE,SAP
-Mercedes,Meta (WhatsApp / Meta AI),META,NASDAQ,META
-Mercedes,Microsoft,MSFT,NASDAQ,MSFT
-Mercedes,PepsiCo,PEP,NASDAQ,PEP
-Mercedes,Adidas,ADS,Frankfurt,ADS.DE
-Mercedes,Marriott,MAR,NASDAQ,MAR
-Mercedes,Nasdaq Inc,NDAQ,NASDAQ,NDAQ
-Mercedes,Signify,LIGHT,Euronext Amsterdam,LIGHT.AS
-Mercedes,Nu Holdings,NU,NYSE,NU
-Mercedes,Pirelli,PIRC,Euronext Milan,PIRC.MI
-Aston Martin,Aramco,2222,Tadawul,2222.SR
-Aston Martin,Cognizant,CTSH,NASDAQ,CTSH
-Aston Martin,Hugo Boss,BOSS,Frankfurt,BOSS.DE
-Aston Martin,EssilorLuxottica (Oakley),EL,Euronext Paris,EL.PA
-Aston Martin,ServiceNow,NOW,NYSE,NOW
-Aston Martin,Coinbase,COIN,NASDAQ,COIN
-Aston Martin,Xerox,XRX,NASDAQ,XRX
-Aston Martin,Arm Holdings,ARM,NASDAQ,ARM
-Aston Martin,CoreWeave,CRWV,NASDAQ,CRWV
-Aston Martin,Barclays,BARC,LSE,BARC.L
-Aston Martin,Valvoline,VVV,NYSE,VVV
-Aston Martin,Puma,PUM,Frankfurt,PUM.DE
-Aston Martin,Honda,7267,Tokyo,7267.T
-Alpine,Microsoft,MSFT,NASDAQ,MSFT
-Alpine,Boeing,BA,NYSE,BA
-Alpine,3D Systems,DDD,NYSE,DDD
-Alpine,Eni,ENI,Euronext Milan,ENI.MI
-Alpine,Renault (Mobilize),RNO,Euronext Paris,RNO.PA
-Alpine,Mercado Libre,MELI,NASDAQ,MELI
-Alpine,AtkinsRealis,ATRL,TSX,ATRL.TO
-Alpine,America Movil (Claro),AMX,NYSE,AMX
-Alpine,Sealsq,LAES,NASDAQ,LAES
-Williams,Atlassian,TEAM,NASDAQ,TEAM
-Williams,Berkshire Hathaway (Duracell),BRK-B,NYSE,BRK-B
-Williams,Komatsu,6301,Tokyo,6301.T
-Williams,Amazon (Zoox),AMZN,NASDAQ,AMZN
-Williams,Barclays,BARC,LSE,BARC.L
-Williams,Edgewell (Wilkinson Sword),EPC,NYSE,EPC
-Williams,Kering (Girard-Perregaux),KER,Euronext Paris,KER.PA
-Audi,bp (Castrol),BP,NYSE,BP
-Audi,Adidas,ADS,Frankfurt,ADS.DE
-Audi,Procter & Gamble (Gillette),PG,NYSE,PG
-Audi,Hyatt,H,NYSE,H
-Audi,BASF (Glasurit),BAS,Frankfurt,BAS.DE
-Audi,Extreme Networks,EXTR,NASDAQ,EXTR
-Haas,Toyota (TGR),7203,Tokyo,7203.T
-Haas,MGM Resorts,MGM,NYSE,MGM
-Racing Bulls,Visa,V,NYSE,V
-Racing Bulls,Block (Cash App),XYZ,NYSE,XYZ
-Racing Bulls,Ford,F,NYSE,F
-Racing Bulls,Hugo Boss,BOSS,Frankfurt,BOSS.DE
-Racing Bulls,ExxonMobil,XOM,NYSE,XOM
-Cadillac,General Motors,GM,NYSE,GM
-Cadillac,America Movil (Claro),AMX,NYSE,AMX
-Cadillac,Core Scientific,CORZ,NASDAQ,CORZ
-Cadillac,PVH Corp (Tommy Hilfiger),PVH,NYSE,PVH
+constructor,sponsor,ticker,exchange,yfinance_ticker,currency
+Ferrari,HP,HPQ,NYSE,HPQ,USD
+Ferrari,Shell,SHEL,NYSE,SHEL,USD
+Ferrari,EssilorLuxottica (Ray-Ban),EL,Euronext Paris,EL.PA,EUR
+Ferrari,SKF,SKF-B,Stockholm,SKF-B.ST,SEK
+Ferrari,Brembo,BRE,Euronext Milan,BRE.MI,EUR
+Ferrari,Iveco,IVG,Euronext Milan,IVG.MI,EUR
+Ferrari,DXC Technology,DXC,NYSE,DXC,USD
+Ferrari,UniCredit,UCG,Euronext Milan,UCG.MI,EUR
+Ferrari,IBM,IBM,NYSE,IBM,USD
+Ferrari,Amazon (AWS),AMZN,NASDAQ,AMZN,USD
+Ferrari,Philip Morris International,PM,NYSE,PM,USD
+Ferrari,Pernod Ricard (Chivas Regal),RI,Euronext Paris,RI.PA,EUR
+Ferrari,Nestle (S.Pellegrino),NESN,SIX,NESN.SW,CHF
+Ferrari,Krafton (PUBG Mobile),259960,KOSE,259960.KS,KRW
+McLaren,Mastercard,MA,NYSE,MA,USD
+McLaren,Alphabet (Google),GOOGL,NASDAQ,GOOGL,USD
+McLaren,Dell Technologies,DELL,NYSE,DELL,USD
+McLaren,Goldman Sachs,GS,NYSE,GS,USD
+McLaren,Hilton,HLT,NYSE,HLT,USD
+McLaren,Coca-Cola,KO,NYSE,KO,USD
+McLaren,Cisco (Splunk),CSCO,NASDAQ,CSCO,USD
+McLaren,Arrow Electronics,ARW,NYSE,ARW,USD
+McLaren,Samsonite (TUMI),1910,HKEX,1910.HK,HKD
+McLaren,Dropbox,DBX,NASDAQ,DBX,USD
+McLaren,Workday,WDAY,NASDAQ,WDAY,USD
+McLaren,Ecolab,ECL,NYSE,ECL,USD
+McLaren,Okta,OKTA,NASDAQ,OKTA,USD
+McLaren,Deutsche Telekom (T-Mobile),DTE,Frankfurt,DTE.DE,EUR
+McLaren,Iron Mountain,IRM,NYSE,IRM,USD
+McLaren,Freshworks,FRSH,NASDAQ,FRSH,USD
+McLaren,Schneider Electric,SU,Euronext Paris,SU.PA,EUR
+McLaren,British American Tobacco,BTI,NYSE,BTI,USD
+McLaren,Puma,PUM,Frankfurt,PUM.DE,EUR
+McLaren,Rubrik,RBRK,NYSE,RBRK,USD
+Red Bull,Oracle,ORCL,NYSE,ORCL,USD
+Red Bull,LVMH (Tag Heuer),MC,Euronext Paris,MC.PA,EUR
+Red Bull,ExxonMobil (Mobil 1 / Esso),XOM,NYSE,XOM,USD
+Red Bull,Siemens,SIE,Frankfurt,SIE.DE,EUR
+Red Bull,AT&T,T,NYSE,T,USD
+Red Bull,Hexagon,HEXA-B,Stockholm,HEXA-B.ST,SEK
+Red Bull,Visa,V,NYSE,V,USD
+Red Bull,Heineken,HEIA,Euronext Amsterdam,HEIA.AS,EUR
+Red Bull,Philips,PHG,NYSE,PHG,USD
+Red Bull,Ford,F,NYSE,F,USD
+Mercedes,CrowdStrike,CRWD,NASDAQ,CRWD,USD
+Mercedes,TeamViewer,TMV,Frankfurt,TMV.DE,EUR
+Mercedes,UBS,UBS,NYSE,UBS,USD
+Mercedes,Qualcomm (Snapdragon),QCOM,NASDAQ,QCOM,USD
+Mercedes,Hewlett Packard Enterprise,HPE,NYSE,HPE,USD
+Mercedes,AMD,AMD,NASDAQ,AMD,USD
+Mercedes,Sherwin-Williams,SHW,NYSE,SHW,USD
+Mercedes,SAP,SAP,NYSE,SAP,USD
+Mercedes,Meta (WhatsApp / Meta AI),META,NASDAQ,META,USD
+Mercedes,Microsoft,MSFT,NASDAQ,MSFT,USD
+Mercedes,PepsiCo,PEP,NASDAQ,PEP,USD
+Mercedes,Adidas,ADS,Frankfurt,ADS.DE,EUR
+Mercedes,Marriott,MAR,NASDAQ,MAR,USD
+Mercedes,Nasdaq Inc,NDAQ,NASDAQ,NDAQ,USD
+Mercedes,Signify,LIGHT,Euronext Amsterdam,LIGHT.AS,EUR
+Mercedes,Nu Holdings,NU,NYSE,NU,USD
+Mercedes,Pirelli,PIRC,Euronext Milan,PIRC.MI,EUR
+Aston Martin,Aramco,2222,Tadawul,2222.SR,SAR
+Aston Martin,Cognizant,CTSH,NASDAQ,CTSH,USD
+Aston Martin,Hugo Boss,BOSS,Frankfurt,BOSS.DE,EUR
+Aston Martin,EssilorLuxottica (Oakley),EL,Euronext Paris,EL.PA,EUR
+Aston Martin,ServiceNow,NOW,NYSE,NOW,USD
+Aston Martin,Coinbase,COIN,NASDAQ,COIN,USD
+Aston Martin,Xerox,XRX,NASDAQ,XRX,USD
+Aston Martin,Arm Holdings,ARM,NASDAQ,ARM,USD
+Aston Martin,CoreWeave,CRWV,NASDAQ,CRWV,USD
+Aston Martin,Barclays,BARC,LSE,BARC.L,GBP
+Aston Martin,Valvoline,VVV,NYSE,VVV,USD
+Aston Martin,Puma,PUM,Frankfurt,PUM.DE,EUR
+Aston Martin,Honda,7267,Tokyo,7267.T,JPY
+Alpine,Microsoft,MSFT,NASDAQ,MSFT,USD
+Alpine,Boeing,BA,NYSE,BA,USD
+Alpine,3D Systems,DDD,NYSE,DDD,USD
+Alpine,Eni,ENI,Euronext Milan,ENI.MI,EUR
+Alpine,Renault (Mobilize),RNO,Euronext Paris,RNO.PA,EUR
+Alpine,Mercado Libre,MELI,NASDAQ,MELI,USD
+Alpine,AtkinsRealis,ATRL,TSX,ATRL.TO,CAD
+Alpine,America Movil (Claro),AMX,NYSE,AMX,USD
+Alpine,Sealsq,LAES,NASDAQ,LAES,USD
+Williams,Atlassian,TEAM,NASDAQ,TEAM,USD
+Williams,Berkshire Hathaway (Duracell),BRK-B,NYSE,BRK-B,USD
+Williams,Komatsu,6301,Tokyo,6301.T,JPY
+Williams,Amazon (Zoox),AMZN,NASDAQ,AMZN,USD
+Williams,Barclays,BARC,LSE,BARC.L,GBP
+Williams,Edgewell (Wilkinson Sword),EPC,NYSE,EPC,USD
+Williams,Kering (Girard-Perregaux),KER,Euronext Paris,KER.PA,EUR
+Audi,bp (Castrol),BP,NYSE,BP,USD
+Audi,Adidas,ADS,Frankfurt,ADS.DE,EUR
+Audi,Procter & Gamble (Gillette),PG,NYSE,PG,USD
+Audi,Hyatt,H,NYSE,H,USD
+Audi,BASF (Glasurit),BAS,Frankfurt,BAS.DE,EUR
+Audi,Extreme Networks,EXTR,NASDAQ,EXTR,USD
+Haas,Toyota (TGR),7203,Tokyo,7203.T,JPY
+Haas,MGM Resorts,MGM,NYSE,MGM,USD
+Racing Bulls,Visa,V,NYSE,V,USD
+Racing Bulls,Block (Cash App),XYZ,NYSE,XYZ,USD
+Racing Bulls,Ford,F,NYSE,F,USD
+Racing Bulls,Hugo Boss,BOSS,Frankfurt,BOSS.DE,EUR
+Racing Bulls,ExxonMobil,XOM,NYSE,XOM,USD
+Cadillac,General Motors,GM,NYSE,GM,USD
+Cadillac,America Movil (Claro),AMX,NYSE,AMX,USD
+Cadillac,Core Scientific,CORZ,NASDAQ,CORZ,USD
+Cadillac,PVH Corp (Tommy Hilfiger),PVH,NYSE,PVH,USD

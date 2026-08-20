@@ -67,12 +67,14 @@ def actualizar_pipeline(full_reload=False):
             r, _ = market_client.get_info_ticker(df_sponsors, CONSTRUCTOR_MAP[fila["constructor"]], fila["date"])
             time.sleep(2)
             for ticker, historial in r.items():
+                currency = df_sponsors[df_sponsors["yfinance_ticker"] == ticker]["currency"].values[0]
                 for fecha, fila_precio in historial.iterrows():
                     row = {
                         "ticker": ticker,
                         "constructor": fila["constructor"],
                         "race_date": fila["date"],
                         "date": fecha,
+                        "currency": currency,
                         "open": fila_precio["Open"],
                         "close": fila_precio["Close"],
                         "high": fila_precio["High"],

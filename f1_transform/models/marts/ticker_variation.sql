@@ -17,11 +17,11 @@ SELECT
     rr.round,
     rr.race_name,
     rr.race_date,
-    MIN(rr.position) as maxima_posicion,
+    MIN(rr.position) as best_position,
     b.ticker,
     b.ticker_close as before_close,
     a.ticker_close as after_close,
-    ((a.ticker_close - b.ticker_close) / b.ticker_close) * 100 as variacion_porcentual
+    ((a.ticker_close - b.ticker_close) / b.ticker_close) * 100 as price_change_pct
 FROM stg_race_results rr
 INNER JOIN before_ranked b
 ON rr.constructor = b.constructor

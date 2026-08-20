@@ -14,10 +14,8 @@ wheels/
 .env.*
 !.env.example
 
-# DuckDB
-*.duckdb
+#DuckDB
 *.duckdb.wal
-*.db
 *.db.wal
 
 # dbt
