@@ -8,19 +8,33 @@ from ingestion import f1_client, market_client
 @flow
 def actualizar_pipeline(full_reload=False):
     con = duckdb.connect("data/f1_market.duckdb")
-
+    existen_ambas_tablas = False
     if full_reload:
         con.sql("DROP TABLE IF EXISTS raw_race_results")
         con.sql("DROP TABLE IF EXISTS raw_ticker_data")
         ultimo_round_cargado=0
         print(f"Full reload activado. Ultimo round: {ultimo_round_cargado}")
     else:
-        ultimo_round_cargado = con.sql("SELECT MAX(CAST(round AS INTEGER)) FROM raw_race_results").fetchone()[0]
-        if ultimo_round_cargado is None:
+        tablas_existentes = con.sql("""
+            SELECT table_name
+            FROM information_schema.tables
+            WHERE table_name IN ('raw_race_results', 'raw_ticker_data')
+        """).fetchall()
+
+        tablas_existentes = {fila[0] for fila in tablas_existentes}
+        existen_ambas_tablas = {
+            "raw_race_results", "raw_ticker_data"
+        }.issubset(tablas_existentes)
+        if "raw_race_results" in tablas_existentes:
+            ultimo_round_cargado = con.sql(
+                """
+                SELECT MAX(CAST(round AS INTEGER)) 
+                FROM raw_race_results""").fetchone()[0] or 0
+        else:
             ultimo_round_cargado = 0
 
     carreras = f1_client.get_data_api(2026, "races")
-    
+    max_race = 0
     for carrera in carreras:
         if(carrera["date"] <= pd.Timestamp.now().strftime("%Y-%m-%d")):
             max_race =  int(carrera["round"])
@@ -84,18 +98,19 @@ def actualizar_pipeline(full_reload=False):
                     rows_tickers.append(row)
         df_tickers = pd.DataFrame(rows_tickers)
 
-        if full_reload:
+        if full_reload or not existen_ambas_tablas:
             con.sql("CREATE OR REPLACE TABLE raw_race_results AS SELECT * FROM df_races")
             con.sql("CREATE OR REPLACE TABLE raw_ticker_data AS SELECT * FROM df_tickers")
         else:
             con.sql("INSERT INTO raw_race_results SELECT * FROM df_races")
-            con.sql("INSERT INTO raw_race_results SELECT * FROM df_tickers")
+            con.sql("INSERT INTO raw_ticker_data SELECT * FROM df_tickers")
             
         con.close()
         subprocess.run(["dbt", "run"], cwd="f1_transform", check=True)
     else:
         print("No hay carreras nuevas.")
+        con.close()
 
 
 if __name__ == "__main__":
-    actualizar_pipeline(full_reload=True)
+    actualizar_pipeline(full_reload=False)
