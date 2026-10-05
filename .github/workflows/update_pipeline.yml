@@ -1,0 +1,17 @@
+name: Update Pipeline
+on: workflow_dispatch
+jobs:
+  update_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Execute update pipeline
+        run: uv run python -m pipeline.flows

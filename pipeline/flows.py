@@ -106,7 +106,7 @@ def actualizar_pipeline(full_reload=False):
             con.sql("INSERT INTO raw_ticker_data SELECT * FROM df_tickers")
             
         con.close()
-        subprocess.run(["dbt", "run"], cwd="f1_transform", check=True)
+        subprocess.run(["dbt", "run", "--profiles-dir", "."], cwd="f1_transform", check=True)
     else:
         print("No hay carreras nuevas.")
         con.close()
