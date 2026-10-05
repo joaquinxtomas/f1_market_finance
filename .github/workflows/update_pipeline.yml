@@ -1,5 +1,8 @@
 name: Update Pipeline
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 5"
 permissions: 
   contents: write
 jobs:
